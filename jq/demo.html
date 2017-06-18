@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .demo {
+            border: 1px solid green;
+            margin: 10px;
+            width: 250px;
+            height: 120px;
+        }
+        
+        #ceshi {
+            border: 1px solid red;
+            margin: 10px;
+            width: 250px;
+            height: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <div id="ceshi"></div>
+    <script src="./jquery-3.1.0.js"></script>
+    <script>
+        // $('.demo')
+        // $('div')
+        // $('<div>wefew</div>')
+        // $($('.demo'))
+        console.log($(document.querySelector('#ceshi'))); //document
+
+
+        // $(function() {})
+        //     // $('.demo')代表的含义是通过类名选择器字符串构造出来一个jq的伪数组对象
+        //     // $('<h3>aa</h3><p>测试</p>') --> 构造出来一个jq的伪数组对象
+        // console.log($('<h3>aa</h3><p>测试<span>aaa</span></p>'))
+        //     // $('<h3>aa</h3><p>测试</p>').appendTo('.demo'); //选择器字符串
+        //     // $('<h3>aa</h3><p>测试</p>').appendTo($('#ceshi')); //jq对象
+        //     // $('<h3>aa</h3><p>测试</p>').appendTo(document.querySelector('#ceshi')); //dom对象
+    </script>
+</body>
+
+</html>

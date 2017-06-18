@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .demo {
+            border: 1px solid green;
+            margin: 10px;
+            width: 250px;
+            height: 120px;
+        }
+        
+        #ceshi {
+            border: 1px solid red;
+            margin: 10px;
+            width: 250px;
+            height: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <div id="ceshi"></div>
+    <script src="./Itcast.js"></script>
+    <script>
+        //childNodes children
+        // console.log(I('<h3>aa</h3><p>测试<span></span></p>')); //html片段字符串
+        // console.log(I('#ceshi'));
+        //  {0:'h3这个dom对象'，1:'p这个对象',length:2,each,map.....}
+        // 
+        // I('<h3>aa</h3><p>测试</p>').appendTo('.demo'); //选择器字符串
+        // I('<h3>aa</h3><p>测试</p>').appendTo(I('.demo')); //itcast对象 --> 伪数组 
+        I('<h3>aa</h3><p>测试</p>').appendTo(document.querySelector('#ceshi')); //dom对象 --> NodeList伪数组
+    </script>
+</body>
+
+</html>
